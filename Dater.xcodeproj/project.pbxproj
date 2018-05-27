@@ -10,8 +10,8 @@
 		954823F020BA2CBE007F7F24 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954823EF20BA2CBE007F7F24 /* ProfileViewController.swift */; };
 		954823F220BA3063007F7F24 /* ProfilePicImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954823F120BA3063007F7F24 /* ProfilePicImageView.swift */; };
 		954823F520BA3C24007F7F24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 954823F420BA3C24007F7F24 /* Assets.xcassets */; };
-		954823FA20BA422B007F7F24 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954823F920BA422B007F7F24 /* LoginPageViewController.swift */; };
-		954823FC20BA4897007F7F24 /* LoginPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954823FB20BA4896007F7F24 /* LoginPageCell.swift */; };
+		954823FA20BA422B007F7F24 /* LoginGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954823F920BA422B007F7F24 /* LoginGuideViewController.swift */; };
+		954823FC20BA4897007F7F24 /* LoginGuideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954823FB20BA4896007F7F24 /* LoginGuideCell.swift */; };
 		954823FE20BA6176007F7F24 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954823FD20BA6176007F7F24 /* PageModel.swift */; };
 		955ECB9120B938FB00D9DE70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955ECB9020B938FB00D9DE70 /* AppDelegate.swift */; };
 		955ECB9320B938FB00D9DE70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955ECB9220B938FB00D9DE70 /* ViewController.swift */; };
@@ -23,8 +23,8 @@
 		954823EF20BA2CBE007F7F24 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		954823F120BA3063007F7F24 /* ProfilePicImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePicImageView.swift; sourceTree = "<group>"; };
 		954823F420BA3C24007F7F24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		954823F920BA422B007F7F24 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
-		954823FB20BA4896007F7F24 /* LoginPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageCell.swift; sourceTree = "<group>"; };
+		954823F920BA422B007F7F24 /* LoginGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginGuideViewController.swift; sourceTree = "<group>"; };
+		954823FB20BA4896007F7F24 /* LoginGuideCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginGuideCell.swift; sourceTree = "<group>"; };
 		954823FD20BA6176007F7F24 /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
 		955ECB8D20B938FB00D9DE70 /* Dater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		955ECB9020B938FB00D9DE70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,8 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				954823EF20BA2CBE007F7F24 /* ProfileViewController.swift */,
-				954823F920BA422B007F7F24 /* LoginPageViewController.swift */,
-				954823FB20BA4896007F7F24 /* LoginPageCell.swift */,
+				954823F920BA422B007F7F24 /* LoginGuideViewController.swift */,
+				954823FB20BA4896007F7F24 /* LoginGuideCell.swift */,
 				955ECB9220B938FB00D9DE70 /* ViewController.swift */,
 			);
 			path = Controller;
@@ -190,9 +190,9 @@
 				954823F020BA2CBE007F7F24 /* ProfileViewController.swift in Sources */,
 				954823FE20BA6176007F7F24 /* PageModel.swift in Sources */,
 				955ECB9320B938FB00D9DE70 /* ViewController.swift in Sources */,
-				954823FC20BA4897007F7F24 /* LoginPageCell.swift in Sources */,
+				954823FC20BA4897007F7F24 /* LoginGuideCell.swift in Sources */,
 				955ECB9120B938FB00D9DE70 /* AppDelegate.swift in Sources */,
-				954823FA20BA422B007F7F24 /* LoginPageViewController.swift in Sources */,
+				954823FA20BA422B007F7F24 /* LoginGuideViewController.swift in Sources */,
 				954823F220BA3063007F7F24 /* ProfilePicImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

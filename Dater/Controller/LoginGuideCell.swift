@@ -1,5 +1,5 @@
 //
-//  LoginPageCell.swift
+//  LoginGuideCell.swift
 //  Dater
 //
 //  Created by Devesh Nema on 5/26/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginPageCell: UICollectionViewCell {
+class LoginGuideCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
@@ -54,13 +54,13 @@ class LoginPageCell: UICollectionViewCell {
         tv.isEditable = false
         tv.isScrollEnabled = false
         tv.isSelectable = false
-        tv.textContainerInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
+        tv.textContainerInset = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)
         tv.translatesAutoresizingMaskIntoConstraints = false
         return tv
     }()
     
     func setupViews() {
-        backgroundColor = UIColor.yellow
+        backgroundColor = UIColor.white
         addSubview(imageView)
         addSubview(textView)
         

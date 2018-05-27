@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //let profileVC = ProfileViewController(collectionViewLayout: UICollectionViewFlowLayout())
         //window?.rootViewController = UINavigationController(rootViewController: profileVC)
         //window?.rootViewController = UINavigationController(rootViewController: loginPageVC)
-        let loginPageVC = LoginPageViewController()
+        let loginPageVC = LoginGuideViewController()
         window?.rootViewController = loginPageVC
         return true
     }
