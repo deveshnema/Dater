@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		954823F020BA2CBE007F7F24 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954823EF20BA2CBE007F7F24 /* ProfileViewController.swift */; };
+		954823F220BA3063007F7F24 /* ProfilePicImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954823F120BA3063007F7F24 /* ProfilePicImageView.swift */; };
+		954823F520BA3C24007F7F24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 954823F420BA3C24007F7F24 /* Assets.xcassets */; };
 		955ECB9120B938FB00D9DE70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955ECB9020B938FB00D9DE70 /* AppDelegate.swift */; };
 		955ECB9320B938FB00D9DE70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955ECB9220B938FB00D9DE70 /* ViewController.swift */; };
 		955ECB9620B938FB00D9DE70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 955ECB9420B938FB00D9DE70 /* Main.storyboard */; };
-		955ECB9820B938FC00D9DE70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 955ECB9720B938FC00D9DE70 /* Assets.xcassets */; };
 		955ECB9B20B938FC00D9DE70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 955ECB9920B938FC00D9DE70 /* LaunchScreen.storyboard */; };
 		955ECBA320B9397C00D9DE70 /* ImageGrid.xib in Resources */ = {isa = PBXBuildFile; fileRef = 955ECBA220B9397C00D9DE70 /* ImageGrid.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		954823EF20BA2CBE007F7F24 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		954823F120BA3063007F7F24 /* ProfilePicImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePicImageView.swift; sourceTree = "<group>"; };
+		954823F420BA3C24007F7F24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		955ECB8D20B938FB00D9DE70 /* Dater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		955ECB9020B938FB00D9DE70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		955ECB9220B938FB00D9DE70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		955ECB9520B938FB00D9DE70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		955ECB9720B938FC00D9DE70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		955ECB9A20B938FC00D9DE70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		955ECB9C20B938FC00D9DE70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		955ECBA220B9397C00D9DE70 /* ImageGrid.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageGrid.xib; sourceTree = "<group>"; };
@@ -40,7 +44,6 @@
 		955ECB8420B938FB00D9DE70 = {
 			isa = PBXGroup;
 			children = (
-				955ECBA220B9397C00D9DE70 /* ImageGrid.xib */,
 				955ECB8F20B938FB00D9DE70 /* Dater */,
 				955ECB8E20B938FB00D9DE70 /* Products */,
 			);
@@ -57,10 +60,13 @@
 		955ECB8F20B938FB00D9DE70 /* Dater */ = {
 			isa = PBXGroup;
 			children = (
+				955ECBA220B9397C00D9DE70 /* ImageGrid.xib */,
 				955ECB9020B938FB00D9DE70 /* AppDelegate.swift */,
+				954823F120BA3063007F7F24 /* ProfilePicImageView.swift */,
+				954823EF20BA2CBE007F7F24 /* ProfileViewController.swift */,
 				955ECB9220B938FB00D9DE70 /* ViewController.swift */,
 				955ECB9420B938FB00D9DE70 /* Main.storyboard */,
-				955ECB9720B938FC00D9DE70 /* Assets.xcassets */,
+				954823F420BA3C24007F7F24 /* Assets.xcassets */,
 				955ECB9920B938FC00D9DE70 /* LaunchScreen.storyboard */,
 				955ECB9C20B938FC00D9DE70 /* Info.plist */,
 			);
@@ -99,6 +105,11 @@
 				TargetAttributes = {
 					955ECB8C20B938FB00D9DE70 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -126,8 +137,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				955ECB9B20B938FC00D9DE70 /* LaunchScreen.storyboard in Resources */,
-				955ECB9820B938FC00D9DE70 /* Assets.xcassets in Resources */,
 				955ECB9620B938FB00D9DE70 /* Main.storyboard in Resources */,
+				954823F520BA3C24007F7F24 /* Assets.xcassets in Resources */,
 				955ECBA320B9397C00D9DE70 /* ImageGrid.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				954823F020BA2CBE007F7F24 /* ProfileViewController.swift in Sources */,
 				955ECB9320B938FB00D9DE70 /* ViewController.swift in Sources */,
 				955ECB9120B938FB00D9DE70 /* AppDelegate.swift in Sources */,
+				954823F220BA3063007F7F24 /* ProfilePicImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +297,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Dater/Dater.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DDA5Y994D;
 				INFOPLIST_FILE = Dater/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,7 +316,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Dater/Dater.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DDA5Y994D;
 				INFOPLIST_FILE = Dater/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
