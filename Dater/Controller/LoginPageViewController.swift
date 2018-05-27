@@ -26,6 +26,15 @@ class LoginPageViewController: UIViewController, UICollectionViewDataSource, UIC
     
     let cellid = "cellid"
     
+    let pages: [Page] = {
+        let firstPage = Page(title: "Discover", message: "Find new and interesting people from around you", imageName: "page1")
+        let secondPage = Page(title: "Swipe", message: "Swipe right to like and left to pass", imageName: "page2")
+        let thirdPage = Page(title: "Match", message: "If they also swipe right, its a match!", imageName: "page3")
+        let fourthPage = Page(title: "Message", message: "You can start messaging once its a match", imageName: "page4")
+
+       return [firstPage, secondPage, thirdPage, fourthPage]
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(collectionView)
@@ -38,11 +47,12 @@ class LoginPageViewController: UIViewController, UICollectionViewDataSource, UIC
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return pages.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellid, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellid, for: indexPath) as! LoginPageCell
+        cell.page = pages[indexPath.item]
         return cell
     }
     
