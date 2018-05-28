@@ -13,8 +13,9 @@
 		954823FA20BA422B007F7F24 /* LoginGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954823F920BA422B007F7F24 /* LoginGuideViewController.swift */; };
 		954823FC20BA4897007F7F24 /* LoginGuideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954823FB20BA4896007F7F24 /* LoginGuideCell.swift */; };
 		954823FE20BA6176007F7F24 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954823FD20BA6176007F7F24 /* PageModel.swift */; };
+		95582B9720BBA9E6009CB14C /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95582B9620BBA9E6009CB14C /* MainNavigationController.swift */; };
+		95582B9920BBAFFD009CB14C /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95582B9820BBAFFD009CB14C /* SwipeViewController.swift */; };
 		955ECB9120B938FB00D9DE70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955ECB9020B938FB00D9DE70 /* AppDelegate.swift */; };
-		955ECB9320B938FB00D9DE70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955ECB9220B938FB00D9DE70 /* ViewController.swift */; };
 		955ECB9B20B938FC00D9DE70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 955ECB9920B938FC00D9DE70 /* LaunchScreen.storyboard */; };
 		955ECBA320B9397C00D9DE70 /* ImageGrid.xib in Resources */ = {isa = PBXBuildFile; fileRef = 955ECBA220B9397C00D9DE70 /* ImageGrid.xib */; };
 /* End PBXBuildFile section */
@@ -26,9 +27,10 @@
 		954823F920BA422B007F7F24 /* LoginGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginGuideViewController.swift; sourceTree = "<group>"; };
 		954823FB20BA4896007F7F24 /* LoginGuideCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginGuideCell.swift; sourceTree = "<group>"; };
 		954823FD20BA6176007F7F24 /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		95582B9620BBA9E6009CB14C /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		95582B9820BBAFFD009CB14C /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 		955ECB8D20B938FB00D9DE70 /* Dater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		955ECB9020B938FB00D9DE70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		955ECB9220B938FB00D9DE70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		955ECB9A20B938FC00D9DE70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		955ECB9C20B938FC00D9DE70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		955ECBA220B9397C00D9DE70 /* ImageGrid.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageGrid.xib; sourceTree = "<group>"; };
@@ -58,9 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				954823EF20BA2CBE007F7F24 /* ProfileViewController.swift */,
+				95582B9820BBAFFD009CB14C /* SwipeViewController.swift */,
 				954823F920BA422B007F7F24 /* LoginGuideViewController.swift */,
+				95582B9620BBA9E6009CB14C /* MainNavigationController.swift */,
 				954823FB20BA4896007F7F24 /* LoginGuideCell.swift */,
-				955ECB9220B938FB00D9DE70 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -189,7 +192,8 @@
 			files = (
 				954823F020BA2CBE007F7F24 /* ProfileViewController.swift in Sources */,
 				954823FE20BA6176007F7F24 /* PageModel.swift in Sources */,
-				955ECB9320B938FB00D9DE70 /* ViewController.swift in Sources */,
+				95582B9720BBA9E6009CB14C /* MainNavigationController.swift in Sources */,
+				95582B9920BBAFFD009CB14C /* SwipeViewController.swift in Sources */,
 				954823FC20BA4897007F7F24 /* LoginGuideCell.swift in Sources */,
 				955ECB9120B938FB00D9DE70 /* AppDelegate.swift in Sources */,
 				954823FA20BA422B007F7F24 /* LoginGuideViewController.swift in Sources */,

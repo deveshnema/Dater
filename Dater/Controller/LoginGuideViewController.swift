@@ -41,6 +41,7 @@ class LoginGuideViewController: UIViewController, UICollectionViewDataSource, UI
         button.layer.borderWidth = 2
         button.layer.cornerRadius = 10
         button.translatesAutoresizingMaskIntoConstraints = false;
+        button.addTarget(self, action: #selector(showSwipeViewController), for: UIControlEvents.touchUpInside)
         return button
     }()
     
@@ -54,6 +55,10 @@ class LoginGuideViewController: UIViewController, UICollectionViewDataSource, UI
 
        return [firstPage, secondPage, thirdPage, fourthPage]
     }()
+    
+    @objc func showSwipeViewController() {
+        navigationController?.viewControllers = [SwipeViewController()]
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,7 +96,7 @@ class LoginGuideViewController: UIViewController, UICollectionViewDataSource, UI
         pageControl.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         
         loginButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        loginButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40).isActive = true
+        loginButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -80).isActive = true
         loginButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         loginButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
     }
