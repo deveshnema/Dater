@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DCFA328B1C4A704992C5148 /* Pods_Dater.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8CA6867A25533396DA3662B /* Pods_Dater.framework */; };
 		954823F020BA2CBE007F7F24 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954823EF20BA2CBE007F7F24 /* ProfileViewController.swift */; };
 		954823F220BA3063007F7F24 /* ProfilePicImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954823F120BA3063007F7F24 /* ProfilePicImageView.swift */; };
 		954823F520BA3C24007F7F24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 954823F420BA3C24007F7F24 /* Assets.xcassets */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4DDB16AC41116FAD6FEA3361 /* Pods-Dater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dater.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dater/Pods-Dater.release.xcconfig"; sourceTree = "<group>"; };
+		8F2D1AA9773F37A4CC7B5AA1 /* Pods-Dater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dater.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dater/Pods-Dater.debug.xcconfig"; sourceTree = "<group>"; };
 		954823EF20BA2CBE007F7F24 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		954823F120BA3063007F7F24 /* ProfilePicImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePicImageView.swift; sourceTree = "<group>"; };
 		954823F420BA3C24007F7F24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		955ECB9A20B938FC00D9DE70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		955ECB9C20B938FC00D9DE70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		955ECBA220B9397C00D9DE70 /* ImageGrid.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageGrid.xib; sourceTree = "<group>"; };
+		E8CA6867A25533396DA3662B /* Pods_Dater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,12 +45,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DCFA328B1C4A704992C5148 /* Pods_Dater.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0414C3C11709DDE36771C32C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D1AA9773F37A4CC7B5AA1 /* Pods-Dater.debug.xcconfig */,
+				4DDB16AC41116FAD6FEA3361 /* Pods-Dater.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84A59E7A251F534BFCA1EC4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8CA6867A25533396DA3662B /* Pods_Dater.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		954823F620BA40F1007F7F24 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +113,8 @@
 			children = (
 				955ECB8F20B938FB00D9DE70 /* Dater */,
 				955ECB8E20B938FB00D9DE70 /* Products */,
+				0414C3C11709DDE36771C32C /* Pods */,
+				84A59E7A251F534BFCA1EC4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 955ECB9F20B938FC00D9DE70 /* Build configuration list for PBXNativeTarget "Dater" */;
 			buildPhases = (
+				A30CDC59AC598E5E98068077 /* [CP] Check Pods Manifest.lock */,
 				955ECB8920B938FB00D9DE70 /* Sources */,
 				955ECB8A20B938FB00D9DE70 /* Frameworks */,
 				955ECB8B20B938FB00D9DE70 /* Resources */,
+				01DD8690D7642C19A4E6BF77 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,6 +210,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01DD8690D7642C19A4E6BF77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Dater/Pods-Dater-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dater/Pods-Dater-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A30CDC59AC598E5E98068077 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dater-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		955ECB8920B938FB00D9DE70 /* Sources */ = {
@@ -331,16 +402,14 @@
 		};
 		955ECBA020B938FC00D9DE70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F2D1AA9773F37A4CC7B5AA1 /* Pods-Dater.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Dater/Dater.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5DDA5Y994D;
 				INFOPLIST_FILE = Dater/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deveshnema.Dater;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -350,16 +419,14 @@
 		};
 		955ECBA120B938FC00D9DE70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DDB16AC41116FAD6FEA3361 /* Pods-Dater.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Dater/Dater.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5DDA5Y994D;
 				INFOPLIST_FILE = Dater/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deveshnema.Dater;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

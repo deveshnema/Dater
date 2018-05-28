@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
-class LoginGuideViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class LoginGuideViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, FBSDKLoginButtonDelegate {
     
     lazy var collectionView : UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -33,17 +34,28 @@ class LoginGuideViewController: UIViewController, UICollectionViewDataSource, UI
         return pc
     }()
     
-    let loginButton : UIButton = {
-        let button = UIButton(type: UIButtonType.roundedRect)
-        button.setTitle("Login Button", for: UIControlState.normal)
-        button.setTitleColor(UIColor.blue, for: UIControlState.normal)
-        button.layer.borderColor = UIColor.blue.cgColor
-        button.layer.borderWidth = 2
-        button.layer.cornerRadius = 10
+    lazy var loginButton : FBSDKLoginButton = {
+        let button = FBSDKLoginButton()
+        button.delegate = self
+        button.removeConstraints(button.constraints)
         button.translatesAutoresizingMaskIntoConstraints = false;
-        button.addTarget(self, action: #selector(showSwipeViewController), for: UIControlEvents.touchUpInside)
+        button.readPermissions = ["email", "public_profile"]
         return button
     }()
+    
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+        if error != nil {
+            print(error)
+            return
+        }
+        //showSwipeViewController()
+        showProfileViewController()
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        
+    }
+    
     
     let guidecellid = "guidecellid"
     
@@ -56,8 +68,18 @@ class LoginGuideViewController: UIViewController, UICollectionViewDataSource, UI
        return [firstPage, secondPage, thirdPage, fourthPage]
     }()
     
+    @objc func showProfileViewController() {
+        let layout = UICollectionViewFlowLayout()
+        let profileVC = ProfileViewController(collectionViewLayout: layout)
+        present(profileVC, animated: true) {
+        }
+    }
+
+    
     @objc func showSwipeViewController() {
-        navigationController?.viewControllers = [SwipeViewController()]
+        present(SwipeViewController(), animated: true) {
+        }
+        //navigationController?.viewControllers = [SwipeViewController()]
     }
     
     override func viewDidLoad() {

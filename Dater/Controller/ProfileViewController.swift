@@ -74,7 +74,13 @@ class ProfileCell : UICollectionViewCell {
     let textView : UITextView = {
         let tv = UITextView()
         tv.isScrollEnabled = false
-        tv.text = "My armor was never a distraction or a hobby, it was a cocoon, and now I'm a changed man. You can take away my house, all my tricks and toys, but one thing you can't take away - I am Iron Man"
+        
+        let attributedText = NSMutableAttributedString(string: "About-me", attributes: [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 20)])
+        
+        attributedText.append(NSAttributedString(string: "\nMy armor was never a distraction or a hobby, it was a cocoon, and now I'm a changed man. You can take away my house, all my tricks and toys, but one thing you can't take away - I am Iron Man", attributes: [NSAttributedStringKey.font : UIFont.systemFont(ofSize: 16)]))
+        
+        
+        tv.attributedText = attributedText
         tv.translatesAutoresizingMaskIntoConstraints = false
         tv.textContainerInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         tv.backgroundColor = UIColor.white
@@ -122,7 +128,7 @@ class ProfileCell : UICollectionViewCell {
         textView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
         textView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
         textView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
-        textView.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        textView.heightAnchor.constraint(equalToConstant: 150).isActive = true
 
         dividerLine.topAnchor.constraint(equalTo: textView.bottomAnchor).isActive = true
         dividerLine.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
