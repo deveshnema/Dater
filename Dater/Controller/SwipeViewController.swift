@@ -160,6 +160,7 @@ class SwipeViewController: UIViewController {
                 }
             }
             
+            
             UIView.animate(withDuration: 0.0) {
                 topCard.center = self.view.center
                 topCard.alpha = 1
