@@ -1,5 +1,7 @@
 # Dater
-An iOS 11 dating App mockup
+An iOS (Swift 4) Tinder style dating App
+
+(Recreating the design style only to enhance the learning experience)
 
 ## Detail
 - The App contains three main MVCs - login page/guide, swipeable profiles VC and the profile settings VC
@@ -18,6 +20,9 @@ An iOS 11 dating App mockup
 - Profile settings view contains
   - Profile images grid view
   - About-me description and distance preferences
+
+
+- Extensive use of UICollectionView
 
 ## Technology
 - Swift 4
